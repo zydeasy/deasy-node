@@ -1,0 +1,23 @@
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Dependency directory
+/node_modules/
+/fis-static/node_modules/
+/fis-static/dist/
+
+# IDE config
+.idea
+.vscode
+
+runtime/
+/www/upload
+/www/xlsx
+/fis-static/.cache
+/www/upload
