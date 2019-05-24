@@ -1,27 +1,10 @@
 const tools = require('./tools/tools.js');
 export default class ueasy {
-  constructor(appkey = '', appsecret = '') {
+  constructor(appkey = '', appsecret = '', api = 'https://grootapi.zuoyanit.com') {
     this.tools = new tools();
     this.appkey = appkey;
     this.appsecret = appsecret;
-    this.apiUrl = 'https://grootapi.zuoyanit.com';
-    this.apiSocketUrl = this.apiUrl + '/socket/push';
-  }
-  /**
-   * 推送消息
-   *
-   * @memberof ueasy
-   */
-  async push(appkey = '', appsecret = '', msg = {}) {
-
-  }
-  /**
-   * 推送消息
-   *
-   * @memberof ueasy
-   */
-  async token(appkey = '', appsecret = '', iv = '', msg = {}) => {
-
+    this.apiUrl = api.replace('.com/', '.com');
   }
 
 
