@@ -1,8 +1,8 @@
 const tools = require('./tools/tools.js');
 module.exports = class socket {
-  constructor(socketkey = '', socketsecret = '', api = 'https://grootapi.zuoyanit.com') {
+  constructor(appkey = '', socketsecret = '', api = 'https://grootapi.zuoyanit.com') {
     this.tools = new tools();
-    this.socketkey = socketkey;
+    this.appkey = appkey;
     this.socketsecret = socketsecret;
     this.apiUrl = api.replace('.com/', '.com');
     this.apiSocketUrl = this.apiUrl + '/socket/push';
@@ -13,7 +13,7 @@ module.exports = class socket {
    */
   async push(msg = {}) {
     const data = {
-      socketkey: this.socketkey,
+      appkey: this.appkey,
       timestamp: this.tools.getUnixTime(),
       msg: JSON.stringify(msg),
     };
