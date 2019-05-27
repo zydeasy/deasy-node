@@ -1,6 +1,6 @@
 {
   "name": "deasy",
-  "version": "0.5.1",
+  "version": "0.5.4",
   "description": "deasy sdk",
   "main": "index.js",
   "scripts": {

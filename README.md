@@ -18,7 +18,7 @@ npm i deasy
   
   ```js
   const deasySocket = require('deasy/socket');
-  const socket = new deasySocket(appkey', appsecret);
+  const socket = new deasySocket(appkey, appsecret);
   const result = await socket.push({
     xxxxxx
   });
