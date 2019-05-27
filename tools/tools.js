@@ -11,7 +11,7 @@ const hmacsha1 = require('hmacsha1'); // 加密
 const CryptoJS = require('crypto-js');
 const superagent = require('superagent'); // 爬虫
 
-export default class tools {
+module.exports = class tools {
   sleep(ms) { // 等待一段时间
     return new Promise(resolve => setTimeout(resolve, ms));
   };

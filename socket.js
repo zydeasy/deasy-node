@@ -1,5 +1,5 @@
 const tools = require('./tools/tools.js');
-export default class ueasy {
+module.exports = class socket {
   constructor(socketkey = '', socketsecret = '', api = 'https://grootapi.zuoyanit.com') {
     this.tools = new tools();
     this.socketkey = socketkey;
@@ -13,7 +13,7 @@ export default class ueasy {
    */
   async push(msg = {}) {
     const data = {
-      socketkey: this.socketkey
+      socketkey: this.socketkey,
       timestamp: this.tools.getUnixTime(),
       msg: JSON.stringify(msg),
     };
@@ -27,7 +27,7 @@ export default class ueasy {
    */
   getToken() {
     const time = new Date().getTime().toString();
-    retutn this.tools.aesEncry(time, this.socketsecret, this.socketsecret);
+    return this.tools.aesEncry(time, this.socketsecret, this.socketsecret);
   }
 
 
