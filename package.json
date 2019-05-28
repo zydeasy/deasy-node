@@ -1,6 +1,6 @@
 {
   "name": "deasy",
-  "version": "0.5.4",
+  "version": "0.5.5",
   "description": "deasy sdk",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zuoyanart/deasy-node.git"
+    "url": "git+https://github.com/zydeasy/deasy-node"
   },
   "keywords": [
     "deasy",
@@ -17,9 +17,9 @@
   "author": "左盐",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zuoyanart/deasy-node/issues"
+    "url": "https://github.com/zydeasy/deasy-node/issues"
   },
-  "homepage": "https://github.com/zuoyanart/deasy-node#readme",
+  "homepage": "https://github.com/zydeasy/deasy-node#readme",
   "dependencies": {
     "crypto-js": "^3.1.9-1",
     "hmacsha1": "^1.0.0",
