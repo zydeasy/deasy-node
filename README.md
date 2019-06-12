@@ -25,3 +25,13 @@ npm i deasy
   ```
 
   ###短信
+
+  ```js
+  const SMS = require('deasy/sms');
+  const sms = new SMS(appkey, appsecret);
+  const result = await sms.send(phone, msg,signname);
+  ```
+
+
+
+
